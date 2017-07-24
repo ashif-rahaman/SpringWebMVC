@@ -16,7 +16,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class IndexCntroller {
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    /**
+     * If the root is requested without any path variable the @RequestMapping() annotation's parameter should be value = ""
+     *
+     * @return view
+     */
+    @RequestMapping(value = "", method = RequestMethod.GET)//method handles requests for root path
     public String getMethod1() {
 
         return "index";
