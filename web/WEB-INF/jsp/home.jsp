@@ -1,0 +1,18 @@
+<%--
+    Document   : home
+    Created on : Jul 25, 2017, 7:25:07 AM
+    Author     : ashif
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h2>Username : ${username}</h2>
+        <h2>Password : ${password}</h2>
+    </body>
+</html>

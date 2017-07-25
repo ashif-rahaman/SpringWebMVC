@@ -10,9 +10,32 @@
 
     <body>
 
-        <h1>${messege1}</h1>
-        <h1>${messege2}</h1>
-        <h1>${eMessege}</h1>
+        <p style="color: red">${errorMessage}</p>
+
+        <form name="loginForm" action="home" method="POST">
+            <table border="1" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="username" value="" placeholder="Username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="password" name="password" value="" placeholder="Password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="reset" value="Reset"/>
+                        </td>
+                        <td>
+                            <input type="submit" value="Submit"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
 
     </body>
 </html>
